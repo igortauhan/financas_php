@@ -20,9 +20,9 @@ if (isset($_POST['btn-adicionar'])) {
 	$sql = "INSERT INTO gestao (descricao, valor, data) VALUES ('$descricao', '$valor', '$data')";
 
 	if(mysqli_query($connect, $sql)) {
-		header('Location: ../index.php?sucess');
+		header('Location: ../index.php');
 	}
 	else {
-		header('Location: ../index.php?error');
+		header('Location: ../index.php');
 	}
 }

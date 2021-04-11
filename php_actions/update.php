@@ -22,9 +22,9 @@ if (isset($_POST['btn-atualizar'])) {
 	$sql = "UPDATE gestao SET descricao = '$descricao', valor = '$valor', data = '$data' WHERE id = '$id'";
 
 	if(mysqli_query($connect, $sql)) {
-		header('Location: ../index.php?sucess');
+		header('Location: ../index.php');
 	}
 	else {
-		header('Location: ../index.php?error');
+		header('Location: ../index.php');
 	}
 }
