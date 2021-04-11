@@ -20,7 +20,7 @@ include_once 'includes/header.php';
 				<label for="data">Data</label>
 			</div>
 			<button type="submit" name="btn-adicionar" class="btn"> Adicionar </button>
-			<a href="index.php" class="btn green">Lista de gastos</a>
+			<a href="index.php" class="btn green"> Lista de gastos </a>
 		</form>
 		<br>
 	</div>
