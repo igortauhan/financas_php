@@ -6,7 +6,7 @@ include_once 'includes/header.php';
 <div class="row">
 	<div class="col 12 m6 push-m3">
 		<h3>Adicionar gasto</h3>
-		<form action="create.php" method="POST">
+		<form action="php_actions/create.php" method="POST">
 			<div class="input-field col s12">
 				<input type="text" name="descricao" id="descricao">
 				<label for="descricao">Descrição</label>
