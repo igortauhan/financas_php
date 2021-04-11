@@ -17,6 +17,7 @@ if (isset($_GET['id'])) {
 	<div class="col 12 m6 push-m3">
 		<h3>Gestão financeira</h3>
 		<form action="php_actions/update.php" method="POST">
+			<input type="hidden" name="id" value="<?php echo $dados['id']?>">
 			<div class="input-field col s12">
 				<input type="text" name="descricao" value="<?php echo $dados['descricao'] ?>" id="descricao">
 				<label for="descricao">Descrição</label>
