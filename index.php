@@ -20,7 +20,6 @@ include_once 'php_actions/db_connect.php';
 				<?php
 				$sql = "SELECT * FROM gestao";
 				$resultado = mysqli_query($connect, $sql);
-				$dados = mysqli_fetch_array($resultado);
 				while($dados = mysqli_fetch_array($resultado)){
 				?>
 				<tr>
@@ -35,6 +34,7 @@ include_once 'php_actions/db_connect.php';
 		</table>
 		<br>
 		<a href="adicionar.php" class="btn">Adicionar gasto</a>
+		<a href="procurar.php" class="btn blue">Pesquisar gasto</a>
 	</div>
 </div>
 
